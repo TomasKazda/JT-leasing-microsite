@@ -1,0 +1,19 @@
+.black { color: #25211F !important; color: var(--black) !important; }
+.white { color: #E5E5E5 !important; color: var(--white) !important; }
+.extrawhite { color: #F0F0F0 !important; color: var(--extrawhite) !important; }
+.blue { color: #2F65B0 !important; color: var(--blue) !important; }
+.red { color: #ED1F1F !important; color: var(--red) !important; }
+.yellow { color: #F58529 !important; color: var(--yellow) !important; }
+.strblue { color: #357BC2 !important; color: var(--strblue) !important; }
+.elgreen { color: #00AA80 !important; color: var(--elgreen) !important; }
+.itred { color: #D90000 !important; color: var(--itred) !important; }
+
+.center { text-align: center; }
+
+.calculate-table td { white-space: nowrap; }
+
+/* mobil only features */
+@media only screen and (max-width: 759.9px) {
+
+  
+}
