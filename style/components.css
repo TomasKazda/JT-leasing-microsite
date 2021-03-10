@@ -5,11 +5,8 @@
 .grape { background-color: #3D235A !important; background-color: var(--grape) !important; }
 
 .body {     
-    position: relative;
     overflow-x: hidden;
-}
-.container { 
-    
+    position: relative;
 }
 .content { 
     max-width: 960px;
@@ -111,6 +108,7 @@
     font-size: 1.77777778em;
     font-weight: bold;
     margin-top: 1em;
+    margin-bottom: .5em;
     position: relative;
 }
 
@@ -125,6 +123,28 @@
     right: 100%;
     top: 50%;
     margin-right: .75em;
+}
+
+.timeline {
+    display: flex;
+    height: 125px;
+    margin: 0 -5.3333334em;
+    overflow-x: auto;
+    scrollbar-color: var(--grape) var(--violet);
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+.timeline::-webkit-scrollbar {
+    height: 10px;
+}
+.timeline::-webkit-scrollbar-track {
+    background: var(--violet);
+}
+.timeline::-webkit-scrollbar-thumb {
+    background: var(--grape);
+}
+.timeline > * {
+    flex-shrink: 0;
 }
 
 .calculate-table td { white-space: nowrap; }
