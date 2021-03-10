@@ -1,6 +1,7 @@
 :root {
-    --black: #101010;
+    --black: #323232;
     --white: #FFFFFF;
+    --pastel: #D7D5E8;
     --lilac: #8B84B4;
     --violet: #6B6392;
     --grape: #3D235A;
@@ -13,31 +14,23 @@ html {
     scroll-behavior: smooth;
     color: var(--white);
 }
-
 body {
     color: inherit;
 }
-
-b,
-strong {
-    font-weight: 600;
-}
-
 h1, h2, h3, h4 {
-    font-family: Gilroy, sans-serif;
-    font-weight: 800;
+    font-weight: bold;
     margin: 0;
 }
-
 h1 {
     font-size: 1.6em;
 }
-
 h2 {
     font-size: 1.777777778em;
     padding: 0 0 .75em;
 }
-
+h3 {
+    font-size: 1.44444em;
+}
 p {
     text-align: left;
     /* text-align-last: center; */

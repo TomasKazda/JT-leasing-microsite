@@ -1,11 +1,20 @@
-.black { background-color: #101010 !important; background-color: var(--black) !important; }
+.black { background-color: #323232 !important; background-color: var(--black) !important; }
 .white { background-color: #FFFFFF !important; background-color: var(--white) !important; }
+.pastel { background-color: #D7D5E8 !important; background-color: var(--pastel) !important; }
 .lilac { background-color: #8B84B4 !important; background-color: var(--lilac) !important; }
 .violet { background-color: #6B6392 !important; background-color: var(--violet) !important; }
 .grape { background-color: #3D235A !important; background-color: var(--grape) !important; }
 
+.light {
+    font-weight: lighter;
+}
+.heavy {
+    font-weight: bold;
+    font-size: 1.77778em;
+}
+
 .body {     
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 .content { 
@@ -14,18 +23,18 @@
     padding: 2.666667em 5.3333334em;
 }
 
-.container-bodyheader { 
+.bodyheader { 
     height: 725px;
     /*padding-bottom: 37.760417%;*/
 }
-.container-bodyheader h1 > span { 
+.bodyheader h1 > span { 
     position: absolute;
     left: -9999px;
 }
-.container-bodyheader h1 {
+.bodyheader h1 {
     padding-top: 80px;
 }
-.container-bodyheader h1::before { 
+.bodyheader h1::before { 
     content: "";
     background-image: url(../img/JaTleasing.svg);
     background-repeat: no-repeat;
@@ -34,12 +43,12 @@
     display: block;
     height: 38px;
 }
-.container-bodyheader .content {
+.bodyheader .content {
     position: relative;
     height: 100%;
     padding: 0 5.3333334em;
 }
-.container-bodyheader::before {
+.bodyheader::before {
     content: "";
     position: absolute;
     top: 200px;
@@ -52,7 +61,7 @@
     background-size: cover;
     background-position: center top;
 }
-.container-bodyheader .content::after {
+.bodyheader .content::after {
     content: "";
     background-image: url(../img/JTLeasing_krystal_3D_895.png);
     background-repeat: no-repeat;
@@ -64,15 +73,15 @@
     right: -100px;
     bottom: -120px;
 }
-.container-bodyheader .trailer {
+.bodyheader .trailer {
     padding-top: 260px;
     font-size: 1.4444444em;
     font-weight: bold;
 }
-.container-bodyheader .trailer p:nth-child(1) {
+.bodyheader .trailer p:nth-child(1) {
     width: 275px;
 }
-.container-bodyheader .trailer p:nth-child(2) {
+.bodyheader .trailer p:nth-child(2) {
     width: 385px;
 }
 
@@ -128,6 +137,7 @@
 .timeline {
     display: flex;
     height: 125px;
+    padding: 1.5em 0;
     margin: 0 -5.3333334em;
     overflow-x: auto;
     scrollbar-color: var(--grape) var(--violet);
@@ -147,7 +157,127 @@
     flex-shrink: 0;
 }
 
+.calculate-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.calculate-limitedoffer {
+    flex-basis: 12em;
+    background-color: var(--pastel);
+    border-radius: .5em;
+    color: var(--black);
+    font-size: .666667em;
+    font-weight: bold;
+    text-align: right;
+    padding: 1.3333em 2em;
+    margin-left: 4em;
+}
+.calculate-limitedoffer > span {
+    display: block;
+}
+
+.calculate-table {
+    flex-grow: 1;
+    border-collapse: collapse;
+}
+.calculate-table tr > * {
+    border-top: 1.5px solid var(--white);
+    border-bottom: 1.5px solid var(--white);
+}
+.calculate-table tr > * {
+    padding: 0.666em .666em .666em .2em;
+}
 .calculate-table td { white-space: nowrap; }
+.calculate-table td:nth-child(2) { 
+    text-align: right; 
+    font-weight: bold;
+}
+.calculate-table-strong {
+    background-color: var(--pastel);
+    color: var(--grape);
+}
+.calculate-table-small {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item {
+    flex-basis: 47%;
+}
+.feedback-item h3 {
+    text-align: center;
+    padding: 1.75em 1em;
+}
+.feedback-item h3 span {
+    display: block;
+}
+
+.bodyfooter {
+    position: relative;
+}
+
+.bodyfooter::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 116px;
+    z-index: 1;
+    background-image: url(../img/OCC_COVER_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.crystal-wrapper {
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.crystal-wrapper::after {
+    content: "";
+    background-image: url(../img/JTLeasing_krystal_3D_895.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    position: absolute;
+    transform: rotateZ(-18deg) scale(3) translateX(-20%) translateY(-28%);
+    transform-origin: top center;
+    width: 50%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+
+.contact dt {
+    font-size: 1.555556em;
+}
+
+.address p {
+    margin: 0;
+}
+.address a {
+    color: inherit;
+}
+.logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-nadace > span {
+    position: absolute;
+    left: -9999px;
+}
+.logo-nadace::before {
+    content: url(../img/nadaceJT.svg);
+    display: block;
+}
 
 
 /* mobil only features */
