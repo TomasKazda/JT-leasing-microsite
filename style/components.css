@@ -1,16 +1,134 @@
-.black { color: #25211F !important; color: var(--black) !important; }
-.white { color: #E5E5E5 !important; color: var(--white) !important; }
-.extrawhite { color: #F0F0F0 !important; color: var(--extrawhite) !important; }
-.blue { color: #2F65B0 !important; color: var(--blue) !important; }
-.red { color: #ED1F1F !important; color: var(--red) !important; }
-.yellow { color: #F58529 !important; color: var(--yellow) !important; }
-.strblue { color: #357BC2 !important; color: var(--strblue) !important; }
-.elgreen { color: #00AA80 !important; color: var(--elgreen) !important; }
-.itred { color: #D90000 !important; color: var(--itred) !important; }
+.black { background-color: #101010 !important; background-color: var(--black) !important; }
+.white { background-color: #FFFFFF !important; background-color: var(--white) !important; }
+.lilac { background-color: #8B84B4 !important; background-color: var(--lilac) !important; }
+.violet { background-color: #6B6392 !important; background-color: var(--violet) !important; }
+.grape { background-color: #3D235A !important; background-color: var(--grape) !important; }
 
-.center { text-align: center; }
+.body {     
+    position: relative;
+    overflow-x: hidden;
+}
+.container { 
+    
+}
+.content { 
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.666667em 5.3333334em;
+}
+
+.container-bodyheader { 
+    height: 725px;
+    /*padding-bottom: 37.760417%;*/
+}
+.container-bodyheader h1 > span { 
+    position: absolute;
+    left: -9999px;
+}
+.container-bodyheader h1 {
+    padding-top: 80px;
+}
+.container-bodyheader h1::before { 
+    content: "";
+    background-image: url(../img/JaTleasing.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    display: block;
+    height: 38px;
+}
+.container-bodyheader .content {
+    position: relative;
+    height: 100%;
+    padding: 0 5.3333334em;
+}
+.container-bodyheader::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    height: 116px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(../img/OCC_COVER_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.container-bodyheader .content::after {
+    content: "";
+    background-image: url(../img/JTLeasing_krystal_3D_895.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    position: absolute;
+    width: 80%;
+    top: -50px;
+    right: -100px;
+    bottom: -120px;
+}
+.container-bodyheader .trailer {
+    padding-top: 260px;
+    font-size: 1.4444444em;
+    font-weight: bold;
+}
+.container-bodyheader .trailer p:nth-child(1) {
+    width: 275px;
+}
+.container-bodyheader .trailer p:nth-child(2) {
+    width: 385px;
+}
+
+.claim { 
+    margin: 0;
+    padding: .5em 0;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.stripe {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    height: 235px;
+}
+
+.stripe > * {
+    flex-shrink: 0;
+}
+
+.containerSpecs { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerSpecs > div {
+    flex-basis: calc(50% - (96px / 2) - 18px);
+}
+
+.containerSpecs dt {
+    font-size: 1.77777778em;
+    font-weight: bold;
+    margin-top: 1em;
+    position: relative;
+}
+
+.containerSpecs > div dt::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/plusMark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 100%;
+    top: 50%;
+    margin-right: .75em;
+}
 
 .calculate-table td { white-space: nowrap; }
+
 
 /* mobil only features */
 @media only screen and (max-width: 759.9px) {

@@ -1,20 +1,21 @@
 :root {
-    --black: #25211F;
-    --white: #E5E5E5;
-    --extrawhite: #F0F0F0;
-    --blue: #2F65B0;
-    --red: #ED1F1F;
-    --yellow: #F58529;
-    --strblue: #357BC2;
-    --elgreen: #00AA80;
-    --itred: #D90000;
+    --black: #101010;
+    --white: #FFFFFF;
+    --lilac: #8B84B4;
+    --violet: #6B6392;
+    --grape: #3D235A;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     scroll-behavior: smooth;
+    color: var(--white);
+}
+
+body {
+    color: inherit;
 }
 
 b,
@@ -25,25 +26,16 @@ strong {
 h1, h2, h3, h4 {
     font-family: Gilroy, sans-serif;
     font-weight: 800;
+    margin: 0;
 }
 
 h1 {
     font-size: 1.6em;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 1em;
-}
-h1 span {
-    display: block;
-    text-transform: initial;
-    font-size: .8em;
-    padding-top: .2em;
 }
 
 h2 {
-    font-size: 1.35em;
-    text-align: center;
-    padding: 1.5em 0 .75em;
+    font-size: 1.777777778em;
+    padding: 0 0 .75em;
 }
 
 p {
