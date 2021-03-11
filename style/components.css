@@ -20,11 +20,9 @@
 .content { 
     max-width: 960px;
     margin: 0 auto;
-    padding: 2.666667em 5.3333334em;
+    padding: 2em 1.5em;
 }
-
 .bodyheader { 
-    height: 725px;
     /*padding-bottom: 37.760417%;*/
 }
 .bodyheader h1 > span { 
@@ -32,7 +30,7 @@
     left: -9999px;
 }
 .bodyheader h1 {
-    padding-top: 80px;
+    padding-top: 1em;
 }
 .bodyheader h1::before { 
     content: "";
@@ -46,52 +44,43 @@
 .bodyheader .content {
     position: relative;
     height: 100%;
-    padding: 0 5.3333334em;
+    background-image: url(../img/JTLeasing_krystal_3D_8bit_448.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 5% right -150px;
 }
+
 .bodyheader::before {
     content: "";
     position: absolute;
-    top: 200px;
-    height: 116px;
+    top: 125px;
+    height: 58px;
     right: 0;
     left: 0;
     z-index: 1;
-    background-image: url(../img/OCC_COVER_1920.jpg);
+    background-image: url(../img/OCC_COVER_960.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
-.bodyheader .content::after {
-    content: "";
-    background-image: url(../img/JTLeasing_krystal_3D_8bit_895.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center right;
-    position: absolute;
-    width: 80%;
-    top: -50px;
-    right: -100px;
-    bottom: -120px;
-}
+
 .bodyheader .trailer {
-    padding-top: 260px;
-    font-size: 1.4444444em;
+    padding-top: 160px;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .bodyheader .trailer p:nth-child(1) {
-    width: 275px;
+    max-width: 275px;
 }
 .bodyheader .trailer p:nth-child(2) {
-    width: 385px;
+    max-width: 385px;
 }
-
 .claim { 
     margin: 0;
     padding: .5em 0;
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: bold;
 }
-
 .stripe::before {
     content: "";
     display: block;
@@ -103,15 +92,9 @@
     background-size: cover;
     background-position: center;
 }
-
 .containerSpecs { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.containerSpecs > div {
-    flex-basis: calc(50% - (96px / 2) - 18px);
+    margin-left: 64px;
+    margin-left: calc(50px + 1.3333333em);
 }
 
 .containerSpecs dt {
@@ -131,7 +114,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     right: 100%;
-    top: 50%;
+    transform: translateY(50%);
+    bottom: 0;
     margin-right: .75em;
 }
 
@@ -139,7 +123,7 @@
     display: flex;
     height: 125px;
     padding: 1.5em 0;
-    margin: 0 -5.3333334em;
+    margin: 0;
     overflow-x: auto;
     scrollbar-color: var(--grape) var(--violet);
     scrollbar-width: thin;
@@ -157,15 +141,7 @@
 .timeline > * {
     flex-shrink: 0;
 }
-
-.calculate-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-}
-
 .calculate-limitedoffer {
-    flex-basis: 12em;
     background-color: #D7D5E8;
     background-color: var(--pastel);
     border-radius: .5em;
@@ -175,24 +151,20 @@
     font-weight: bold;
     text-align: right;
     padding: 1.3333em 2em;
-    margin-left: 4em;
 }
-.calculate-limitedoffer > span {
-    display: block;
-}
-
 .calculate-table {
-    flex-grow: 1;
+    width: 100%;
     border-collapse: collapse;
 }
-.calculate-table tr > * {
+.calculate-table tr {
     border-top: 1.5px solid #FFFFFF;
     border-top: 1.5px solid var(--white);
     border-bottom: 1.5px solid #FFFFFF;
     border-bottom: 1.5px solid var(--white);
 }
 .calculate-table tr > * {
-    padding: 0.666em .666em .666em .2em;
+    display: block;
+    padding: 0.2em;
 }
 .calculate-table td { white-space: nowrap; }
 .calculate-table td:nth-child(2) { 
@@ -209,22 +181,9 @@
     font-size: 0.85em;
     font-weight: normal;
 }
-
-.feedback {
-    display: flex;
-    justify-content: space-between;
-}
-.feedback-item {
-    flex-basis: 47%;
-}
 .feedback-item h3 {
-    text-align: center;
-    padding: 1.75em 1em;
+    padding: 1em 0;
 }
-.feedback-item h3 span {
-    display: block;
-}
-
 .bodyfooter {
     position: relative;
 }
@@ -239,28 +198,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-}
-
-.crystal-wrapper {
-    max-width: 1920px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.crystal-wrapper::after {
-    content: "";
-    background-image: url(../img/JTLeasing_krystal_3D_8bit_895.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center right;
-    position: absolute;
-    transform: rotateZ(-18deg) scale(3) translateX(-20%) translateY(-28%);
-    transform-origin: top center;
-    width: 50%;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    pointer-events: none;
 }
 
 .contact dt {
