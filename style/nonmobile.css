@@ -1,0 +1,13 @@
+
+@media only screen and (min-width: 760px) {
+    .stripe::before {
+        height: 235px;
+        background-image: url(../img/stripe_3939.jpg);
+    }
+}
+
+@media only screen and (min-width: 1960px) {
+    .stripe::before {
+        background-size: contain;
+    }
+}
