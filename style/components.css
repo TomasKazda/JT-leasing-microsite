@@ -90,7 +90,7 @@
     background-image: url(../img/stripe_1680.jpg);
     background-repeat: repeat-x;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 .containerSpecs { 
     margin-left: 64px;

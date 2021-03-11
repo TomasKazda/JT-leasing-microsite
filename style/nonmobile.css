@@ -116,9 +116,9 @@
     }
 }
 @media only screen and (min-width: 1140px) {
-    .stripe::before {
+    /* .stripe::before {
         background-size: contain;
-    }
+    } */
     .timeline {
         margin: 0 -5.3333334em;
     }
